@@ -1,0 +1,14 @@
+org.opencv
+attr camera_id
+attr show_fps
+drawable btn_boarder
+drawable information
+id any
+id back
+id btn_no
+id btn_yes
+id front
+id icon
+id text_dialog
+layout dialog_view
+styleable CameraBridgeViewBase camera_id show_fps

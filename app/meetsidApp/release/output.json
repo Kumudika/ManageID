@@ -1,0 +1,19 @@
+[
+  {
+    "outputType": {
+      "type": "APK"
+    },
+    "apkData": {
+      "type": "MAIN",
+      "splits": [],
+      "versionCode": 3,
+      "versionName": "1.2meetsidApp",
+      "enabled": true,
+      "outputFile": "Meetsid-1.2-meetsidApp-release.apk",
+      "fullName": "meetsidAppRelease",
+      "baseName": "meetsidApp-release"
+    },
+    "path": "Meetsid-1.2-meetsidApp-release.apk",
+    "properties": {}
+  }
+]

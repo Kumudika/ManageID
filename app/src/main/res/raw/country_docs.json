@@ -1,0 +1,1691 @@
+{
+  "countries": [
+    {
+      "name": "Afghanistan",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "AFG"
+    },
+    {
+      "name": "Albania",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "ALB"
+    },
+    {
+      "name": "Algeria",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "DZA"
+    },
+    {
+      "name": "American Samoa",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "ASM"
+    },
+    {
+      "name": "Andorra",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "AND"
+    },
+    {
+      "name": "Angola",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "AGO"
+    },
+    {
+      "name": "Anguilla",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "AIA"
+    },
+    {
+      "name": "Antarctica",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "ATA"
+    },
+    {
+      "name": "Antigua and Barbuda",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "ATG"
+    },
+    {
+      "name": "Argentina",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "ARG"
+    },
+    {
+      "name": "Armenia",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "ARM"
+    },
+    {
+      "name": "Aruba",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "ABW"
+    },
+    {
+      "name": "Australia",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "AUS"
+    },
+    {
+      "name": "Austria",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "AUT"
+    },
+    {
+      "name": "Azerbaijan",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "AZE"
+    },
+    {
+      "name": "Bahamas",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "BHS"
+    },
+    {
+      "name": "Bahrain",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "BHR"
+    },
+    {
+      "name": "Bangladesh",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "BGD"
+    },
+    {
+      "name": "Barbados",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "BRB"
+    },
+    {
+      "name": "Belarus",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "BLR"
+    },
+    {
+      "name": "Belgium",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "BEL"
+    },
+    {
+      "name": "Belize",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "BLZ"
+    },
+    {
+      "name": "Benin",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "BEN"
+    },
+    {
+      "name": "Bermuda",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "BMU"
+    },
+    {
+      "name": "Bhutan",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "BTN"
+    },
+    {
+      "name": "Bolivia, Plurinational State of",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "BOL"
+    },
+    {
+      "name": "Bosnia and Herzegovina",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "BIH"
+    },
+    {
+      "name": "Botswana",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "BWA"
+    },
+    {
+      "name": "Brazil",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "BRA"
+    },
+    {
+      "name": "British Indian Ocean Territory",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "IOT"
+    },
+    {
+      "name": "Brunei Darussalam",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "BRN"
+    },
+    {
+      "name": "Bulgaria",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "BGR"
+    },
+    {
+      "name": "Burkina Faso",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "BFA"
+    },
+    {
+      "name": "Burundi",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "BDI"
+    },
+    {
+      "name": "Cambodia",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "KHM"
+    },
+    {
+      "name": "Cameroon",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "CMR"
+    },
+    {
+      "name": "Canada",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "CAN"
+    },
+    {
+      "name": "Cape Verde",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "CV"
+    },
+    {
+      "name": "Cayman Islands",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "CYM"
+    },
+    {
+      "name": "Central African Republic",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "CAF"
+    },
+    {
+      "name": "Chad",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "TCD"
+    },
+    {
+      "name": "Chile",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "CHL"
+    },
+    {
+      "name": "China",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "CHN"
+    },
+    {
+      "name": "Christmas Island",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "CXR"
+    },
+    {
+      "name": "Cocos (Keeling) Islands",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "CCK"
+    },
+    {
+      "name": "Colombia",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "COL"
+    },
+    {
+      "name": "Comoros",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "COM"
+    },
+    {
+      "name": "Congo",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "COG"
+    },
+    {
+      "name": "Congo, The Democratic Republic of the",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "COD"
+    },
+    {
+      "name": "Cook Islands",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "COK"
+    },
+    {
+      "name": "Costa Rica",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "CRI"
+    },
+    {
+      "name": "Cote d'Ivoire",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "CIV"
+    },
+    {
+      "name": "Croatia",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "HRV"
+    },
+    {
+      "name": "Cuba",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "CUB"
+    },
+    {
+      "name": "Cyprus",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "CYP"
+    },
+    {
+      "name": "Czech Republic",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "CZE"
+    },
+    {
+      "name": "Denmark",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "DNK"
+    },
+    {
+      "name": "Djibouti",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "DJI"
+    },
+    {
+      "name": "Dominica",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "DMA"
+    },
+    {
+      "name": "Dominican Republic",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "DOM"
+    },
+    {
+      "name": "Ecuador",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "ECU"
+    },
+    {
+      "name": "Egypt",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "EGY"
+    },
+    {
+      "name": "El Salvador",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "SLV"
+    },
+    {
+      "name": "Equatorial Guinea",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "GNQ"
+    },
+    {
+      "name": "Eritrea",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "ERI"
+    },
+    {
+      "name": "Estonia",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "EST"
+    },
+    {
+      "name": "Ethiopia",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "ETH"
+    },
+    {
+      "name": "Falkland Islands (Malvinas)",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "FLK"
+    },
+    {
+      "name": "Faroe Islands",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "FRO"
+    },
+    {
+      "name": "Fiji",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "FJI"
+    },
+    {
+      "name": "Finland",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "FIN"
+    },
+    {
+      "name": "France",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "FRA"
+    },
+    {
+      "name": "French Guiana",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "GUF"
+    },
+    {
+      "name": "French Polynesia",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "PYF"
+    },
+    {
+      "name": "Gabon",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "GAB"
+    },
+    {
+      "name": "Gambia",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "GMB"
+    },
+    {
+      "name": "Georgia",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "GEO"
+    },
+    {
+      "name": "Germany",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "DEU"
+    },
+    {
+      "name": "Ghana",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "GHA"
+    },
+    {
+      "name": "Gibraltar",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "GIB"
+    },
+    {
+      "name": "Greece",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "GRC"
+    },
+    {
+      "name": "Greenland",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "GRL"
+    },
+    {
+      "name": "Grenada",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "GRD"
+    },
+    {
+      "name": "Guadeloupe",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "GLP"
+    },
+    {
+      "name": "Guam",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "GUM"
+    },
+    {
+      "name": "Guatemala",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "GTM"
+    },
+    {
+      "name": "Guernsey",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "GGY"
+    },
+    {
+      "name": "Guinea",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "GIN"
+    },
+    {
+      "name": "Guinea-Bissau",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "GNB"
+    },
+    {
+      "name": "Guyana",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "GUY"
+    },
+    {
+      "name": "Haiti",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "HTI"
+    },
+    {
+      "name": "Holy See (Vatican City State)",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "VAT"
+    },
+    {
+      "name": "Honduras",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "HND"
+    },
+    {
+      "name": "Hong Kong",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "HKG"
+    },
+    {
+      "name": "Hungary",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "HUN"
+    },
+    {
+      "name": "Iceland",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "ISL"
+    },
+    {
+      "name": "India",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "IND"
+    },
+    {
+      "name": "Indonesia",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "IDN"
+    },
+    {
+      "name": "Iran, Islamic Republic of",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "IRN"
+    },
+    {
+      "name": "Iraq",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "IRQ"
+    },
+    {
+      "name": "Ireland",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "IRL"
+    },
+    {
+      "name": "Isle of Man",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "IMN"
+    },
+    {
+      "name": "Israel",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "ISR"
+    },
+    {
+      "name": "Italy",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "ITA"
+    },
+    {
+      "name": "Jamaica",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "JAM"
+    },
+    {
+      "name": "Japan",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "JPN"
+    },
+    {
+      "name": "Jersey",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "JEY"
+    },
+    {
+      "name": "Jordan",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "JOR"
+    },
+    {
+      "name": "Kazakhstan",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "KAZ"
+    },
+    {
+      "name": "Kenya",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "KEN"
+    },
+    {
+      "name": "Kiribati",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "KIR"
+    },
+    {
+      "name": "Korea, Democratic People's Republic of",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "PRK"
+    },
+    {
+      "name": "Korea, Republic of",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "KOR"
+    },
+    {
+      "name": "Kuwait",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "KWT"
+    },
+    {
+      "name": "Kyrgyzstan",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "KGZ"
+    },
+    {
+      "name": "Lao People's Democratic Republic",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "LAO"
+    },
+    {
+      "name": "Latvia",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "LVA"
+    },
+    {
+      "name": "Lebanon",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "LBN"
+    },
+    {
+      "name": "Lesotho",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "LSO"
+    },
+    {
+      "name": "Liberia",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "LBR"
+    },
+    {
+      "name": "Libyan Arab Jamahiriya",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "LBY"
+    },
+    {
+      "name": "Liechtenstein",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "LIE"
+    },
+    {
+      "name": "Lithuania",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "LTU"
+    },
+    {
+      "name": "Luxembourg",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "LUX"
+    },
+    {
+      "name": "Macao",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "MAC"
+    },
+    {
+      "name": "Macedonia, The Former Yugoslav Republic of",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "MKD"
+    },
+    {
+      "name": "Madagascar",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "MDG"
+    },
+    {
+      "name": "Malawi",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "MWI"
+    },
+    {
+      "name": "Malaysia",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "MYS"
+    },
+    {
+      "name": "Maldives",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "MDV"
+    },
+    {
+      "name": "Mali",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "MLI"
+    },
+    {
+      "name": "Malta",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "MLT"
+    },
+    {
+      "name": "Marshall Islands",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "MHL"
+    },
+    {
+      "name": "Martinique",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "MTQ"
+    },
+    {
+      "name": "Mauritania",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "MRT"
+    },
+    {
+      "name": "Mauritius",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "MUS"
+    },
+    {
+      "name": "Mayotte",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "MYT"
+    },
+    {
+      "name": "Mexico",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "MEX"
+    },
+    {
+      "name": "Micronesia, Federated States of",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "FSM"
+    },
+    {
+      "name": "Moldova, Republic of",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "MDA"
+    },
+    {
+      "name": "Monaco",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "MCO"
+    },
+    {
+      "name": "Mongolia",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "MNG"
+    },
+    {
+      "name": "Montenegro",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "MNE"
+    },
+    {
+      "name": "Montserrat",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "MSR"
+    },
+    {
+      "name": "Morocco",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "MAR"
+    },
+    {
+      "name": "Mozambique",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "MOZ"
+    },
+    {
+      "name": "Myanmar",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "MMR"
+    },
+    {
+      "name": "Namibia",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "NAM"
+    },
+    {
+      "name": "Nauru",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "NRU"
+    },
+    {
+      "name": "Nepal",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "NPL"
+    },
+    {
+      "name": "Netherlands",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "NLD"
+    },
+    {
+      "name": "Netherlands Antilles",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "AN"
+    },
+    {
+      "name": "New Caledonia",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "NC"
+    },
+    {
+      "name": "New Zealand",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "NZL"
+    },
+    {
+      "name": "Nicaragua",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "NIC"
+    },
+    {
+      "name": "Niger",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "NER"
+    },
+    {
+      "name": "Nigeria",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "NGA"
+    },
+    {
+      "name": "Niue",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "NIU"
+    },
+    {
+      "name": "Norfolk Island",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "NFK"
+    },
+    {
+      "name": "Northern Mariana Islands",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "MNP"
+    },
+    {
+      "name": "Norway",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "NOR"
+    },
+    {
+      "name": "Oman",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "OMN"
+    },
+    {
+      "name": "Pakistan",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "PAK"
+    },
+    {
+      "name": "Palau",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "PLW"
+    },
+    {
+      "name": "Palestinian Territory, Occupied",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "PSE"
+    },
+    {
+      "name": "Panama",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "PAN"
+    },
+    {
+      "name": "Papua New Guinea",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "PNG"
+    },
+    {
+      "name": "Paraguay",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "PRY"
+    },
+    {
+      "name": "Peru",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "PER"
+    },
+    {
+      "name": "Philippines",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "PHL"
+    },
+    {
+      "name": "Pitcairn",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "PCN"
+    },
+    {
+      "name": "Poland",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "POL"
+    },
+    {
+      "name": "Portugal",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "PRT"
+    },
+    {
+      "name": "Puerto Rico",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "PRI"
+    },
+    {
+      "name": "Qatar",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "QAT"
+    },
+    {
+      "name": "Romania",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "ROU"
+    },
+    {
+      "name": "Russia",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "RUS"
+    },
+    {
+      "name": "Rwanda",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "RWA"
+    },
+    {
+      "name": "Réunion",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "REU"
+    },
+    {
+      "name": "Saint Barthélemy",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "BLM"
+    },
+    {
+      "name": "Saint Helena, Ascension and Tristan Da Cunha",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "SHN"
+    },
+    {
+      "name": "Saint Kitts and Nevis",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "KNA"
+    },
+    {
+      "name": "Saint Lucia",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "LCA"
+    },
+    {
+      "name": "Saint Martin",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "MAF"
+    },
+    {
+      "name": "Saint Pierre and Miquelon",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "SPM"
+    },
+    {
+      "name": "Saint Vincent and the Grenadines",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "VCT"
+    },
+    {
+      "name": "Samoa",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "WSM"
+    },
+    {
+      "name": "San Marino",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "SMR"
+    },
+    {
+      "name": "Sao Tome and Principe",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "STP"
+    },
+    {
+      "name": "Saudi Arabia",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "SAU"
+    },
+    {
+      "name": "Senegal",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "SEN"
+    },
+    {
+      "name": "Serbia",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "SRB"
+    },
+    {
+      "name": "Seychelles",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "SYC"
+    },
+    {
+      "name": "Sierra Leone",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "SLE"
+    },
+    {
+      "name": "Singapore",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "SGP"
+    },
+    {
+      "name": "Slovakia",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "SVK"
+    },
+    {
+      "name": "Slovenia",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "SVN"
+    },
+    {
+      "name": "Solomon Islands",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "SLB"
+    },
+    {
+      "name": "Somalia",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "SOM"
+    },
+    {
+      "name": "South Africa",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "ZAF"
+    },
+    {
+      "name": "South Georgia and the South Sandwich Islands",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "SGS"
+    },
+    {
+      "name": "Spain",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "ESP"
+    },
+    {
+      "name": "Sri Lanka",
+      "docs": {
+        "name": "Passport,National Identity Card,New National Identity Card"
+      },
+      "code": "LKA"
+    },
+    {
+      "name": "Sudan",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "SDN"
+    },
+    {
+      "name": "Suriname",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "SUR"
+    },
+    {
+      "name": "Svalbard and Jan Mayen",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "SJM"
+    },
+    {
+      "name": "Swaziland",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "CHE"
+    },
+    {
+      "name": "Sweden",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "SWE"
+    },
+    {
+      "name": "Switzerland",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "CH"
+    },
+    {
+      "name": "Syrian Arab Republic",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "SYR"
+    },
+    {
+      "name": "Taiwan, Province of China",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "TWN"
+    },
+    {
+      "name": "Tajikistan",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "TJK"
+    },
+    {
+      "name": "Tanzania, United Republic of",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "TZA"
+    },
+    {
+      "name": "Thailand",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "THA"
+    },
+    {
+      "name": "Timor-Leste",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "TLS"
+    },
+    {
+      "name": "Togo",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "TGO"
+    },
+    {
+      "name": "Tokelau",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "TKL"
+    },
+    {
+      "name": "Tonga",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "TON"
+    },
+    {
+      "name": "Trinidad and Tobago",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "TTO"
+    },
+    {
+      "name": "Tunisia",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "TUN"
+    },
+    {
+      "name": "Turkey",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "TUR"
+    },
+    {
+      "name": "Turkmenistan",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "TKM"
+    },
+    {
+      "name": "Turks and Caicos Islands",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "TCA"
+    },
+    {
+      "name": "Tuvalu",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "TUV"
+    },
+    {
+      "name": "Uganda",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "UGA"
+    },
+    {
+      "name": "Ukraine",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "UKR"
+    },
+    {
+      "name": "United Arab Emirates",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "ARE"
+    },
+    {
+      "name": "United Kingdom",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "GBR"
+    },
+    {
+      "name": "United States",
+      "docs": {
+        "name": "Passport,Driver’s License"
+      },
+      "code": "USA"
+    },
+    {
+      "name": "Uruguay",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "URY"
+    },
+    {
+      "name": "Uzbekistan",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "UZB"
+    },
+    {
+      "name": "Vanuatu",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "VUT"
+    },
+    {
+      "name": "Venezuela, Bolivarian Republic of",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "VEN"
+    },
+    {
+      "name": "Viet Nam",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "VNM"
+    },
+    {
+      "name": "Virgin Islands, British",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "VGB"
+    },
+    {
+      "name": "Virgin Islands, U.S.",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "VIR"
+    },
+    {
+      "name": "Wallis and Futuna",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "WLF"
+    },
+    {
+      "name": "Yemen",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "YEM"
+    },
+    {
+      "name": "Zambia",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "ZMB"
+    },
+    {
+      "name": "Zimbabwe",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "ZWE"
+    },
+    {
+      "name": "Åland Islands",
+      "docs": {
+        "name": "Passport"
+      },
+      "code": "ALA"
+    }
+  ]
+}

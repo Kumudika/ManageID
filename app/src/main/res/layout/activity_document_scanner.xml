@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:layout_editor_absoluteY="81dp">
+    <!--<TextView-->
+    <!--android:id="@+id/mInfoText"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_marginTop="60dp"-->
+    <!--android:background="#FFFFFF"-->
+    <!--android:text="Take Photo"-->
+    <!--android:textColor="#000000"-->
+    <!--android:textSize="@dimen/_18sdp"-->
+    <!--android:fontFamily="@font/gotham"-->
+    <!--android:padding="10dp"-->
+    <!--android:gravity="center"-->
+    <!--app:layout_constraintTop_toTopOf="parent"-->
+    <!--app:layout_constraintRight_toRightOf="parent"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"/>-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.meetsid.userApp.TextDetectionUtil.Camera.TextCameraSourcePreview
+            android:id="@+id/preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="vertical">
+
+            <com.meetsid.userApp.TextDetectionUtil.Other.TextGraphicOverlay
+                android:id="@+id/barcodeOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.meetsid.userApp.TextDetectionUtil.Camera.TextCameraSourcePreview>
+
+        <View
+            android:id="@+id/border"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/id_boarder" />
+
+        <LinearLayout
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/backBtn"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="top"
+                android:background="@color/meetsid_transparent"
+                android:src="@drawable/left_icon" />
+
+            <TextView
+                android:id="@+id/topic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/doc_scan_ins"
+                android:textColor="@color/meetsid_white"
+                android:textSize="@dimen/_16sdp"
+                android:padding="2dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:id="@+id/croppedImage" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

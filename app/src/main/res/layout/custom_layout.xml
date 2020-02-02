@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/meetsid_white">
+
+    <TextView
+        android:id="@+id/sliderNum"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/circle"
+        android:fontFamily="@font/metropolis_extralight"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="4"
+        android:textColor="#22B672"
+        android:textSize="@dimen/_38sdp" />
+
+    <ImageView
+        android:layout_height="80dp"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/face_icon"
+        android:adjustViewBounds="true"
+        android:id="@+id/imageView"
+        android:layout_below="@id/sliderNum" />
+
+    <TextView
+        android:id="@+id/sliderTopic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/slider_1_title"
+        android:textSize="@dimen/_14sdp"
+        android:gravity="center"
+        android:textColor="@color/meetsid_blue"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageView" />
+
+    <TextView
+        android:id="@+id/sliderText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="@string/slider_1_text"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/sliderTopic" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/start_button"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

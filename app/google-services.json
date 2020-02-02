@@ -1,0 +1,119 @@
+{
+  "project_info": {
+    "project_number": "846956814689",
+    "firebase_url": "https://meetsid-2fa25.firebaseio.com",
+    "project_id": "meetsid-2fa25",
+    "storage_bucket": "meetsid-2fa25.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846956814689:android:7584b12fb870ae4ca4e520",
+        "android_client_info": {
+          "package_name": "com.meetsid.instituteApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "846956814689-r21mo74fdagqbsnb62t1s8tr5jld1ef3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbrv119fCHtJlKOfzJG8Qi1ZbIheMbCxU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "846956814689-r21mo74fdagqbsnb62t1s8tr5jld1ef3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "846956814689-mle64po5ebfjfidiljc6ud6pjj5f102h.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.meetsid.instituteApp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846956814689:android:9539e53dcd2216d6a4e520",
+        "android_client_info": {
+          "package_name": "com.meetsid.userApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "846956814689-r21mo74fdagqbsnb62t1s8tr5jld1ef3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbrv119fCHtJlKOfzJG8Qi1ZbIheMbCxU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "846956814689-r21mo74fdagqbsnb62t1s8tr5jld1ef3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "846956814689-mle64po5ebfjfidiljc6ud6pjj5f102h.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.meetsid.instituteApp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846956814689:android:9bf1a099903889c8a4e520",
+        "android_client_info": {
+          "package_name": "com.meetsid.userApp.election"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "846956814689-r21mo74fdagqbsnb62t1s8tr5jld1ef3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbrv119fCHtJlKOfzJG8Qi1ZbIheMbCxU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "846956814689-r21mo74fdagqbsnb62t1s8tr5jld1ef3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "846956814689-mle64po5ebfjfidiljc6ud6pjj5f102h.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.meetsid.instituteApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

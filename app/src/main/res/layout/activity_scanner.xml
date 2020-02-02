@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/gradient">
+
+            <ImageButton
+                android:id="@+id/backBtn"
+                android:layout_marginLeft="10dp"
+                android:layout_width="10dp"
+                android:layout_height="15dp"
+                android:layout_gravity="left|center_vertical"
+                android:background="@drawable/left_icon" />
+            <TextView
+                android:id="@+id/topic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/setup_face"
+                android:textColor="@color/white"
+                android:fontFamily="@font/metropolis_regular"
+                android:textSize="17sp"
+                android:layout_gravity="center"
+                android:gravity="center" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6">
+
+                <LinearLayout
+                    android:id="@+id/cameraPanel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <com.meetsid.userApp.FaceDetectionUtil.common.CameraSourcePreview
+                        android:id="@+id/preview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fadingEdge="horizontal">
+
+                        <com.meetsid.userApp.FaceDetectionUtil.common.GraphicOverlay
+                            android:id="@+id/overlay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </com.meetsid.userApp.FaceDetectionUtil.common.CameraSourcePreview>
+                </LinearLayout>
+
+                <com.meetsid.userApp.Utils.TransparentCircle xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/circle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RedundantNamespace"
+                    app:circle_color="@color/meetsid_transparent" />
+
+                <TextView
+                    android:visibility="invisible"
+                    android:id="@+id/mInfoText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/blink_info_anther"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_40sdp"
+                    android:padding="10dp"
+                    android:lineSpacingMultiplier="0.8"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/alertText"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:text="@string/alert"
+                    android:textColor="@color/meetsid_blue"
+                    android:textSize="@dimen/_15sdp"
+                    android:background="@drawable/rounded_edge_shape"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/metropolis_regular"
+                    android:text="@string/face_info"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:id="@+id/rlCapture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/meetsid_white"
+                    android:visibility="visible">
+
+                    <Button
+                        android:id="@+id/btnCapture"
+                        android:visibility="invisible"
+                        android:background="@color/meetsid_white"
+                        android:layout_width="@dimen/capture_button_size"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:enabled="false" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

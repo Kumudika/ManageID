@@ -1,0 +1,15 @@
+int attr camera_id 0x7f040001
+int attr show_fps 0x7f040002
+int drawable btn_boarder 0x7f080001
+int drawable information 0x7f080002
+int id any 0x7f0b0001
+int id back 0x7f0b0002
+int id btn_no 0x7f0b0003
+int id btn_yes 0x7f0b0004
+int id front 0x7f0b0005
+int id icon 0x7f0b0006
+int id text_dialog 0x7f0b0007
+int layout dialog_view 0x7f0e0001
+int[] styleable CameraBridgeViewBase { 0x7f040001, 0x7f040002 }
+int styleable CameraBridgeViewBase_camera_id 0
+int styleable CameraBridgeViewBase_show_fps 1

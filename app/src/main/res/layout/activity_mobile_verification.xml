@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomLayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        tools:context=".Activities.MobileVerification">
+
+        <include
+            android:id="@+id/first"
+            layout="@layout/topic_layout"
+            app:title="@{@string/verify_mobile}" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Please enter the code sent to your mobile."
+            android:textColor="@color/meetsid_grey2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/first" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pinInput"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:gravity="center_horizontal"
+            app:errorEnabled="true"
+            app:hintTextAppearance="@style/text_in_layout_hint_Style"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text">
+
+            <EditText
+                android:id="@+id/pinCode"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="true"
+                android:inputType="number"
+                android:letterSpacing="1"
+                android:maxLength="5"
+                android:textColor="@color/meetsid_text_grey"
+                android:textSize="@dimen/_18sdp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--        <com.rengwuxian.materialedittext.MaterialEditText-->
+        <!--            android:id="@+id/pinCode"-->
+        <!--            android:gravity="center"-->
+        <!--            android:layout_width="210dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="@dimen/_24sdp"-->
+        <!--            android:maxLength="5"-->
+        <!--            android:inputType="number"-->
+        <!--            android:includeFontPadding="true"-->
+        <!--            android:letterSpacing="2"-->
+        <!--            android:textSize="@dimen/_14sdp"-->
+        <!--            android:textColor="@color/meetsid_grey2"-->
+        <!--            app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--            app:layout_constraintRight_toRightOf="parent"-->
+        <!--            app:met_autoValidate="true"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/text"-->
+        <!--            app:met_underlineColor="@color/meetsid_grey2"-->
+        <!--            app:met_primaryColor="@color/meetsid_grey2"-->
+        <!--            tools:targetApi="lollipop" />-->
+
+        <Button
+            android:id="@+id/btnVerify"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_green_fill_shape"
+            android:text="@string/verify_btn_text"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pinInput" />
+
+        <TextView
+            android:id="@+id/btnResend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:clickable="true"
+            android:drawableRight="@drawable/replay"
+            android:drawablePadding="@dimen/_5sdp"
+            android:text="@string/resend_btn_text"
+            android:textColor="@color/meetsid_green"
+            android:visibility="invisible"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnVerify" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

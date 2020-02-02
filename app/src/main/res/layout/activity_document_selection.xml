@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/bottomLayer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">
+
+            <include
+                android:id="@+id/first"
+                layout="@layout/topic_layout"
+                app:title="@{@string/select_doc}" />
+
+            <TextView
+                android:id="@+id/infoTxt"
+                android:text="@string/doc_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@id/first"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_30sdp" />
+
+            <LinearLayout
+                android:id="@+id/docDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:orientation="vertical"
+                android:layout_below="@id/infoTxt">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="30dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/countryInput"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/countryText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sri Lanka"
+                        android:hint="Document Country"
+                        android:imeOptions="actionDone"
+                        android:inputType="none" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <!--                <TextView-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="Change document country"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:layout_marginBottom="10dp"/>-->
+                <!--                <TextView-->
+                <!--                    android:id="@+id/selectedCOuntry"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="40dp"-->
+                <!--                    android:layout_marginLeft="@dimen/_10sdp"-->
+                <!--                    android:layout_marginRight="@dimen/_10sdp"-->
+                <!--                    android:text="Sri Lanka"-->
+                <!--                    android:background="@drawable/text_blue_fill"-->
+                <!--                    android:gravity="center"/>-->
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/countryLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="bottom"
+            android:layout_gravity="bottom"
+            android:visibility="invisible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="@color/meetsid_line_grey">
+
+                <TextView
+                    android:id="@+id/btnCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:text="Cancel"
+                    android:textColor="@color/meetsid_blue1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="Document Country" />
+
+                <TextView
+                    android:id="@+id/btnOk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:text="Done"
+                    android:textColor="@color/meetsid_blue1" />
+            </RelativeLayout>
+
+            <com.aigestudio.wheelpicker.WheelPicker
+                android:id="@+id/wheelPicker"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@color/meetsid_light_grey"
+                android:foregroundGravity="center"
+                app:layout_constraintBottom_toBottomOf="parent" />
+        </LinearLayout>
+    </FrameLayout>
+</layout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="3dp"
+        android:id="@+id/icon"
+        android:gravity="center"
+        android:background="@color/meetsid_grey3"
+        android:scaleType="fitCenter" />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Title"
+        android:gravity="center"
+        android:textColor="#ff000000"
+        android:textSize="16sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Textto"
+        android:id="@+id/body"
+        android:layout_below="@+id/icon"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/body">
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="42dp"
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/_12sdp"
+            android:padding="5dp"
+            android:text="Accept"
+            android:id="@+id/btn_accept"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/grey_boader"
+            android:textColor="@color/meetsid_text_grey"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/_12sdp"
+            android:padding="5dp"
+            android:text="Decline"
+            android:id="@+id/btn_decline"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/grey_boader"
+            android:textColor="@color/meetsid_text_grey" />
+    </LinearLayout>
+
+</RelativeLayout>

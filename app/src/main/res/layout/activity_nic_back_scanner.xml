@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.NicBackScanner">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.wonderkiln.camerakit.CameraView
+            android:id="@+id/camView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp">
+
+            <com.meetsid.userApp.FaceDetectionUtil.common.GraphicOverlay
+                android:id="@+id/graphic_overlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </com.wonderkiln.camerakit.CameraView>
+
+        <RelativeLayout
+            android:id="@+id/rlCapture"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/capture_overlay_size"
+            android:background="@color/cv_capture_bg">
+
+            <Button
+                android:id="@+id/btnCapture"
+                android:background="@drawable/btn_white_fill_shape"
+                android:layout_width="@dimen/capture_button_size"
+                android:layout_height="@dimen/capture_button_size"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

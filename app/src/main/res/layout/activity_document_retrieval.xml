@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:background="@color/meetsid_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/first"
+            layout="@layout/topic_layout"
+            app:title="@{@string/verify_details}" />
+
+        <LinearLayout
+            android:id="@+id/imageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/first"
+            android:background="@color/meetsid_white"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/imageFront"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="100dp"-->
+            <!--                android:layout_marginRight="20dp"-->
+            <!--                android:adjustViewBounds="true"-->
+            <!--                android:foreground="@drawable/image_boarder"-->
+            <!--                android:scaleType="centerCrop"-->
+            <!--                android:src="@drawable/nic_icon" />-->
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/imageBack"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="100dp"-->
+            <!--                android:adjustViewBounds="true"-->
+            <!--                android:foreground="@drawable/image_boarder"-->
+            <!--                android:scaleType="centerCrop"-->
+            <!--                android:src="@drawable/nic_back_icon" />-->
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="155dp"
+            android:layout_marginBottom="70dp"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/infoView"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/meetsid_white"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:id="@+id/btnPanel"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/btnEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_green_fill_shape"
+                    android:text="Edit" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

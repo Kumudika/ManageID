@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/meetsid_white">
+
+            <include
+                android:id="@+id/first"
+                layout="@layout/topic_layout"
+                app:title="@{@string/verify_details}" />
+
+            <LinearLayout
+                android:id="@+id/imageLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/first"
+                android:layout_marginTop="5dp"
+                android:background="@color/meetsid_white"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp">
+
+                <!--                <ImageView-->
+                <!--                    android:id="@+id/imageFront"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="100dp"-->
+                <!--                    android:layout_marginRight="20dp"-->
+                <!--                    android:adjustViewBounds="true"-->
+                <!--                    android:foreground="@drawable/image_boarder"-->
+                <!--                    android:scaleType="centerCrop"-->
+                <!--                    android:src="@drawable/nic_icon" />-->
+
+                <!--                <ImageView-->
+                <!--                    android:id="@+id/imageBack"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="100dp"-->
+                <!--                    android:adjustViewBounds="true"-->
+                <!--                    android:foreground="@drawable/image_boarder"-->
+                <!--                    android:scaleType="centerCrop"-->
+                <!--                    android:src="@drawable/nic_back_icon" />-->
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="155dp"
+                android:layout_marginBottom="70dp"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:id="@+id/infoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/meetsid_white"
+                android:orientation="vertical"
+                android:paddingTop="5dp"
+                android:paddingBottom="20dp">
+
+                <LinearLayout
+                    android:id="@+id/btnPanel"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <Button
+                        android:id="@+id/btnRetry"
+                        android:layout_width="0dp"
+                        android:layout_height="42dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_green_boarder_shape"
+                        android:text="@string/retry"
+                        android:textColor="@color/meetsid_green" />
+
+                    <Button
+                        android:id="@+id/btnContinue"
+                        android:layout_width="0dp"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_green_fill_shape"
+                        android:text="@string/continue_btn" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/countryLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/meetsid_line_grey"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/btnCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="Cancel"
+                    android:textColor="@color/meetsid_blue1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="Country" />
+
+                <TextView
+                    android:id="@+id/btnOk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="Done"
+                    android:textColor="@color/meetsid_blue1" />
+            </RelativeLayout>
+
+            <com.aigestudio.wheelpicker.WheelPicker
+                android:id="@+id/countryPicker"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@color/meetsid_light_grey"
+                android:foregroundGravity="center"
+                app:layout_constraintBottom_toBottomOf="parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            android:background="@color/meetsid_light_grey">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/meetsid_line_grey"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/btnClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="Cancel"
+                    android:textColor="@color/meetsid_blue1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="Date" />
+
+                <TextView
+                    android:id="@+id/btnDone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="Done"
+                    android:textColor="@color/meetsid_blue1" />
+            </RelativeLayout>
+
+            <DatePicker
+                android:id="@+id/datePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:soundEffectsEnabled="true"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner" />
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="160dp"-->
+            <!--                android:background="@color/meetsid_light_grey"-->
+            <!--                android:orientation="horizontal"-->
+            <!--                android:weightSum="4">-->
+            <!--                <com.aigestudio.wheelpicker.widgets.WheelYearPicker-->
+            <!--                    android:id="@+id/yearInput"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:layout_weight="1"/>-->
+            <!--                <com.aigestudio.wheelpicker.WheelPicker-->
+            <!--                    android:id="@+id/monthInput"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:layout_weight="2"/>-->
+            <!--                <com.aigestudio.wheelpicker.widgets.WheelDayPicker-->
+            <!--                    android:id="@+id/dayInput"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:layout_weight="1"/>-->
+            <!--            </LinearLayout>-->
+            <!--            <com.aigestudio.wheelpicker.widgets.WheelDatePicker-->
+            <!--                android:id="@+id/datePicker"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="160dp"-->
+            <!--                android:background="@color/meetsid_light_grey"-->
+            <!--                android:foregroundGravity="center"-->
+            <!--                app:layout_constraintBottom_toBottomOf="parent" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sexLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/meetsid_line_grey"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/btnClose2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="Cancel"
+                    android:textColor="@color/meetsid_blue1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="Sex" />
+
+                <TextView
+                    android:id="@+id/btnOk2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="Done"
+                    android:textColor="@color/meetsid_blue1" />
+            </RelativeLayout>
+
+            <com.aigestudio.wheelpicker.WheelPicker
+                android:id="@+id/sexPicker"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/meetsid_light_grey"
+                android:foregroundGravity="center"
+                app:layout_constraintBottom_toBottomOf="parent" />
+        </LinearLayout>
+    </FrameLayout>
+</layout>

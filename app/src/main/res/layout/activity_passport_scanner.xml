@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.PassportScanner">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.meetsid.userApp.TextDetectionUtil.Camera.TextCameraSourcePreview
+            android:id="@+id/preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="horizontal">
+
+            <com.meetsid.userApp.TextDetectionUtil.Other.TextGraphicOverlay
+                android:id="@+id/barcodeOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.meetsid.userApp.TextDetectionUtil.Camera.TextCameraSourcePreview>
+
+        <View
+            android:id="@+id/outerBorder"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/id_boarder" />
+
+        <View
+            android:id="@+id/innerBorder"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/id_boarder" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:id="@+id/croppedImage" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,137 @@
+<resources>
+
+    <string name="passcode">Create a Password as a backup verification option</string>
+
+    <string name="action">Press &amp; hold while reading the paragraph above.</string>
+    <string name="default_text">MeetSID is a global identity verification and protection solution that gives its users complete control over their identity.</string>
+    <string name="voice_topic">Record Your Voice</string>
+
+    <!--<string name="login_btn_text">Login</string>-->
+    #titles of pages
+    <string name="sign_up">Sign Up</string>
+    <string name="starting">Getting Started</string>
+    <string name="setup_face">Setup Face ID</string>
+    <string name="verify_email">Email Verification</string>
+    <string name="verify_mobile">Mobile Verification</string>
+    <string name="nic_upload">Upload NIC</string>
+    <string name="select_doc">Select Document Type</string>
+    <string name="setup_voice">Setup Voice</string>
+    <string name="phy_verify">Physical Verification</string>
+    <string name="verify_passcode">Password Login</string>
+    <string name="passcode_setup">Setup Password</string>
+    <string name="add_payment">Add Payment Details</string>
+    <string name="verify_details">Confirm Details</string>
+    <string name="face_login">Face Login</string>
+    <string name="voice_login">Voice Login</string>
+    <string name="nic">NIC</string>
+    <string name="passport">Passport</string>
+    <string name="election_message_title">Congratulation</string>
+    <string name="election_message">This is a free service provided by Election Commission of Sri Lanka</string>
+    <string name="front_title">Front of National Identity Card</string>
+    <string name="nic_back_title">Back of National Identity Card</string>
+    <string name="license_front_title">Front of Driver\'s License</string>
+    <string name="license_back_title">Back of Driver\'s License</string>
+    <string name="new_nic_front_title">National Identity Card</string>
+    <string name="new_nic_back_title">Back of National Identity Card</string>
+    <string name="guide_title">Registration Process</string>
+
+    <string name="blink_info">Blink</string>
+    <string name="blink_info_anther">Blink\nAgain</string>
+    <string name="smile_info">Smile</string>
+    <string name="turn_left">Turn\nLeft</string>
+    <string name="turn_right">Turn\nRight</string>
+    <string name="upload">Upload</string>
+    <string name="retry">Retry</string>
+    <string name="alert">Hold phone at eye level</string>
+
+    #first page
+    <string name="login_btn_text">Login</string>
+    <string name="signup_btn_text">Sign Up</string>
+
+    #intro page
+    <string name="video_topic_text">What is meetSID</string>
+
+    #starting page
+    <string name="meetsid_intro_title">Take control of your identity</string>
+    <string name="basic_intro">MeetSID stores your information on a private blockchain with quantum proof security and gives you, and only you, access to it.</string>
+    <string name="learn_more"><u>Learn more</u></string>
+    <string name="start_button">Get Started</string>
+    <string name="tour_button">Take a Tour</string>
+
+    #Guide Page
+    <string name="slider_1_title">Setup Face Identity</string>
+    <string name="slider_1_text">Follow the gestures on the screen for liveness detection.</string>
+    <string name="slider_2_title">Setup Voice Identity</string>
+    <string name="slider_2_text">Tap the record button &amp; read the text on the screen.</string>
+    <string name="slider_3_title">Select Identity Document</string>
+    <string name="slider_3_text">You will need a government issued identity document.</string>
+    <string name="slider_4_title">Scan Document</string>
+    <string name="slider_4_text">Scan your identity document.</string>
+    <string name="slider_5_title">Payment Information</string>
+    <string name="slider_5_text">Purchase your annual subscription for MeetSID\'s identity verification &amp;
+     fraud prevention services.</string>
+
+    #success page
+
+    #email verification page
+    <string name="verify_btn_text">Verify</string>
+    <string name="resend_btn_text"><u>Resend</u></string>
+
+    #sign up page
+
+    #face detection page
+    <string name="face_info">Hold the camera in-front of your face and make the gestures (e.g. Blink) displayed.</string>
+    <string name="hold_instruction">Hold phone at eye level</string>
+
+    #voice detection page
+    <string name="voice_info">Tap the button and read the text on the screen.\n
+    Tap again to stop recording.</string>
+    <string name="start">Tap to start</string>
+    <string name="stop">Tap to stop</string>
+    <string name="play">Tap to play</string>
+
+    #doc capture page
+    <string name="nic_front_info">Capture front of your NIC</string>
+    <string name="nic_front_lbl">Front of NIC</string>
+    <string name="nic_front_btn">Take a Photo</string>
+    <string name="nic_back_info">Take a selfie with the back of your NIC</string>
+    <string name="nic_back_lbl">Back of NIC</string>
+
+    #driver's license page
+    <string name="license_front_info">Capture front of your license</string>
+    <string name="license_front_lbl">Front of License</string>
+    <string name="license_frnt">Take a Photo</string>
+    <string name="license_back_info">Capture back of your license</string>
+    <string name="license_back_lbl">Back of License</string>
+
+    #new nic page
+    <string name="n_nic_front_info">Capture front of your NIC</string>
+    <string name="n_nic_front_lbl">Front of NIC</string>
+    <string name="n_nic_frnt">Take a Photo</string>
+    <string name="n_nic_back_info">Capture back of your NIC</string>
+    <string name="n_nic_back_lbl">Back of NIC</string>
+
+    #passcode page
+    <string name="continue_btn">Continue</string>
+    <string name="passcode_ins">This is your backup verification in case of a partial failure in biometric authentication.</string>
+    <string name="download_txt"><u>Download password</u></string>
+    <string name="download_res">passcode.txt is saved to external storage</string>
+
+    #doc selection page
+    <string name="doc_info">This is the primary identity document for your MeetSID verification.</string>
+    <string name="doc_pass">Passport</string>
+    <string name="doc_nic">National Identity Card</string>
+    <string name="doc_driver">Driver’s License</string>
+
+    #user details page
+    <string name="confirm_btn_text">Confirm</string>
+    <string name="next">Next</string>
+    <string name="gold_status">Gold Status</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="physical_verification">Physical Verification</string>
+    <string name="address">Address</string>
+    <string name="selfie_with_nic_back_side">Selfie with NIC Back</string>
+    <string name="scan_nic_front">Scan NIC Front</string>
+    <string name="title_activity_nav">NavActivity</string>
+    <string name="doc_scan_ins">Place document inside the square and hold still</string>
+</resources>

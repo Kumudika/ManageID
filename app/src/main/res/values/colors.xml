@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    ##Meetsid color codes.....
+    <color name="meetsid_green">#27B472</color>
+    <color name="meetsid_blue">#093C71</color>
+    <color name="meetsid_text_grey">#616161</color>
+    <color name="meetsid_line_grey">#D2D2D2</color>
+    <color name="meetsid_light_grey">#f3f3f3</color>
+    <color name="meesid_gold">#FFD700</color>
+    <color name="meetsid_silver">#C0C0C0</color>
+    <color name="meetsid_bronze">#CD7F32</color>
+    <color name="meetsid_gradient_blue">#00ACDE</color>
+    <color name="meetsid_gradient_green">#02A986</color>
+
+    <color name="meetsid_yellow">#eeb82e</color>
+    <color name="meetsid_blue1">#0A92D1</color>
+    <color name="meetsid_orange">#ee582e</color>
+    <color name="meetsid_grey1">#455a64</color>
+    <color name="meetsid_grey2">#A09898</color>
+    <color name="meetsid_grey3">#95666666</color>
+    <color name="meetsid_white">#FFFFFF</color>
+    <color name="meetsid_teal">#02A986</color>
+    <color name="meetsid_red1">#EE582E</color>
+    <color name="meetsid_light_blue">#e3f2fd</color>
+    <color name="meetsid_transparent">#00000000</color>
+
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="cv_capture_bg">#55000000</color>
+</resources>

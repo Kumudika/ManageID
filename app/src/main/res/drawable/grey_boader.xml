@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    android:padding="10dp">
+    <stroke
+        android:width="1sp"
+        android:color="@color/meetsid_grey3" />
+    <solid android:color="@color/meetsid_white" />
+    <corners android:radius="30dp" />
+</shape>

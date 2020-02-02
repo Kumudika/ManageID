@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.wonderkiln.camerakit.CameraView
+            android:id="@+id/camView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.meetsid.userApp.FaceDetectionUtil.common.GraphicOverlay
+                android:id="@+id/overlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.wonderkiln.camerakit.CameraView>
+
+        <View
+            android:id="@+id/outerBorder"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/id_boarder" />
+
+        <LinearLayout
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/backBtn"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="top"
+                android:background="@color/meetsid_transparent"
+                android:src="@drawable/left_icon" />
+
+            <TextView
+                android:id="@+id/topic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Place document inside the square and click capture"
+                android:textColor="@color/meetsid_white"
+                android:textSize="16dp"
+                android:padding="2dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnCapture"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:background="@color/meetsid_transparent"
+            android:src="@drawable/capture_btn"
+            android:scaleType="centerCrop" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

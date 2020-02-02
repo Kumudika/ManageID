@@ -1,0 +1,70 @@
+﻿endpoint	side	code	title	description
+admin	Server	ADMIN_USER_EXIST	Email Exists	This email is taken, try another.
+admin	Server	INVALID_ROLE	Role Not Found	This role does not exist, try again or contact support.
+admin	Server	ROLE_EXIST	Role Exists	This role exists, try a different role name.
+admin	Server	INST_USER_EXIST	Email Exists	This email is taken, try another.
+admin	Server	INST_EXIST	Existing Institute	This institute exists, try another name or contact support.
+admin	Server	INST_NOT_FOUND	Institute Not Found	This institute does not exist, try again or contact support.
+app	Client	NO_SECRET_KEY	Lost Wallet Secret	Please contact support to recover your account.
+app	Client	SCAN_FAILED	Error	Scanning failed, please try again.
+app	Client 	DEFAULT_ERROR	Error	System error, please try again or contact support.
+app	Client	SPEECH_REG_PERMISSION	Permission Required	MeetSID requires speech recognition permission to continue.
+app	Client	VOICE_TEXT_MISMATCH	Incorrect Wording	Please read the blue text exactly as displayed on the screen.
+app	Client	VOICE_REG_FAIL	Error	Voice recognition failed, please try again.
+app	Client	EMPTY_FIELD	Error	Required
+app	Client	INVALID_MAIL	Error	Please enter a valid email.
+app	Client	INVALID_MOBILE	Error	Please enter a valid mobile number.
+app	Client	INVALID_PSSWRD_LEN_REQ	Error	Use eight or more characters.
+app	Client	INVALID_PSSWRD_REQ	Error	Must contain letters, numbers & symbols.
+app	Client	MISMATCH_PSSWRD_FIELDS	Error	Fields do not match.
+app	Client	INCRRCT_DOB	Error	DoB does not match your NIC number.
+app	Client	INCRRCT_SEX	Error	Sex does not match with NIC number.
+app	Client	INVALID_CHAR	Error	Contains a restricted symbol. Allowed symbols #?!@$%^&*.-
+app	Client	CONTAINS_SPACES	Error	Cannot contain blank spaces.
+app	Client	INVALID_NIC	Error	Invalid NIC number.
+common	Server	DB_ERROR	System Error	System database error, please try again or contact support.
+common	Server	INVALID_USER	User Not Found	User not found, please try again or contact support.
+common	Server	FACE_NOT_FOUND	Face Not Found	Face cannot be identified, please try again or contact support.
+Common	Server	ALREADY_VOTED	Already Voted	Consumed token, thank you for voting!
+common	Server	LIVENESS_FAIL	Verification Error	Liveness detection failed, please try again.
+common	Server	FACE_AUTH_FAIL	Verification Error	Invalid username or face ID, please try again.
+common	Server	VOICE_AUTH_FAIL	Verification Error	Invalid username or voice ID, please try again.
+common	Server	PIN_AUTH_FAIL	Verification Error	Invalid username or password, please try again or contact support.
+common	Server	PARTIAL_SUCCESS	Partially Verified	Partial biometric match achieved, proceed to next verification level.
+document	Server	PERSONAL_NO_MISSING	Missing ID Number	Please enter the ID number.
+document	Server	PERSONAL_NO_EXIST	Existing ID Number	This ID is already in use, please try again.
+document	Server	INVALID_DOCUMENT	Invalid Document	Please select the correct document type.
+document	Server	EXPIRED_DOCUMENT	Expired Document	Please use a valid document.
+external	Server	EMAIL_FAILED	Email Failed	Email sending failed.
+external	Server	SMS_FAILED	SMS Failed	SMS sending failed
+institute	Server	EMPTY_FCM_SESSION	User Login Required	User may not receive push notifications. Request user to login to their MeetSID app
+institute	Server	FCM_AUTH_ERROR	Configuration Error	Configuration for push notifications is invalid.
+Institute	Server	FCM_SERVER_ERROR	Server Error	Push notification server error.
+Institute	Server	FCM_DATA_ERROR	Server Error	Invalid data in the push notification.
+Institute	Server	REQUEST_TIMEOUT	Request Timeout	Request timeout, please try again.
+Institute	Server	INVALID_TOKEN	Invalid Code	Invalid code, please check your code.
+Institute	Server	DOCUMENT_NOT_FOUND	Document Not Found	This document is not included in the user profile.
+institute	Server	USER_DECLINED	Request Denied	Your request was rejected by the user.
+institute	Server	VERIFICATION_FAILED	Verification Failed	Verification failed
+institute	Server	INVALID_VOTE_TOKEN	Invalid Vote Code	Invalid vote code, please check your code.
+institute	Server	EXPIRED_TOKEN	Expired Code	Expired code, please regenerate your code.
+instituteuser	Server	INST_USR_EXIST	User Not Found	User not found, please try again or contact support.
+push_notification	Server	PHYSICALLY_VERIFIED	Physically Verified	You have been successfully verified.
+push_notification	Server	TRANS_VERIFICATION_SUM	<institute_name>	Transaction verification
+push_notification	Server	TRANS_VERIFICATION	Verify Transaction	Transfer Rs. %3.2f to %s
+push_notification	Server	VOTE_VERIFICATION_SUM	<institute_name>	Voter verified.
+push_notification	Server	VOTE_VERIFICATION	Voter Verified	You are eligible to vote.
+push_notification	Server	INFO_VERIFY_SUM	<institute_name>	Do you consent to share the requested information?
+push_notification	Server	INFO_VERIFY	Consent with face verification	<requested field names>
+push_notification	Server	CONNECT_WITH	Connect with <institute_name>	Proceed with face verification
+register	Server	USER_EXIST	Email Exists	This email is taken, try another.
+register	Server	INVALID_EMAIL_CODE	Invalid Email Code	Invalid email verification code, please try again.
+register	Server	INVALID_SMS_CODE	Invalid Mobile Code	Invalid mobile verification code, please try again.
+register	Server	INVALID_REQUEST	Invalid Request	Invalid request
+register	Server	VOICE_TOO_SHORT	Voice Too Short	Voice recording is too short, please try again at a normal speed.
+register	Server	PAYMENT_ERROR	Payment Error	Transaction failed: <Error by authorize.net>
+user	Server	PAYMENT_NOT_FOUND	Payment Error	Payment information not found.
+validator	Server	FILE_NOT_FOUND	Server Error	Server error.
+app	Client	INVALID_NAME	Error	Invalid name.
+app	Client	INVALID_CARDNO	Error	Invalid card number.
+app	Client	INVALID_PASSPORTNO	Error	Invalid passport number.

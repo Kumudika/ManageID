@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:background="@color/meetsid_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bottomLayer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <include
+                android:id="@+id/first"
+                layout="@layout/topic_layout"
+                app:title="@{@string/sign_up}" />
+
+            <RelativeLayout
+                android:id="@+id/inputs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:focusableInTouchMode="true"
+                app:layout_constraintTop_toBottomOf="@id/first">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/mailInput"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:errorEnabled="true">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/mailText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email"
+                        android:imeOptions="actionDone"
+                        android:inputType="textEmailAddress" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/mobileInput"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/countryInput"
+                    android:layout_marginTop="5dp"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/mobileText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Mobile"
+                        android:imeOptions="actionDone"
+                        android:inputType="phone"
+                        android:digits="+() 1234567890-" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/countryInput"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mailInput"
+                    android:layout_marginTop="5dp"
+                    app:errorEnabled="true">
+
+                    <EditText
+                        android:id="@+id/countryTxt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/map_pin"
+                        android:hint="Country"
+                        android:imeOptions="actionDone"
+                        android:inputType="none" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/signupBtn"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/signup_btn_text"
+                app:layout_constraintTop_toBottomOf="@id/inputs" />
+
+            <!--<com.hbb20.CountryCodePicker-->
+            <!--android:id="@+id/ccp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:gravity="left"-->
+            <!--app:layout_constraintTop_toBottomOf="@id/signupBtn"-->
+            <!--app:layout_constraintRight_toRightOf="parent"-->
+            <!--app:layout_constraintLeft_toLeftOf="parent"-->
+            <!--app:ccpDialog_backgroundColor="#FFFFFF"-->
+            <!--app:ccpDialog_showNameCode="true"-->
+            <!--app:ccp_showArrow="false"-->
+            <!--app:ccp_showFullName="true"-->
+            <!--app:ccp_showPhoneCode="false"-->
+            <!--app:ccp_showNameCode="false"-->
+            <!--app:ccp_autoDetectCountry="true"-->
+            <!--app:ccp_defaultLanguage="ENGLISH"-->
+            <!--/>-->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/countryLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="bottom"
+            android:visibility="invisible"
+            android:layout_gravity="bottom">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="@color/meetsid_line_grey">
+
+                <TextView
+                    android:id="@+id/btnCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:text="Cancel"
+                    android:textColor="@color/meetsid_blue1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="Country" />
+
+                <TextView
+                    android:id="@+id/btnOk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:text="Done"
+                    android:textColor="@color/meetsid_blue1" />
+            </RelativeLayout>
+            <com.aigestudio.wheelpicker.WheelPicker
+                android:id="@+id/wheelPicker"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@color/meetsid_light_grey"
+                android:foregroundGravity="center"
+                app:layout_constraintBottom_toBottomOf="parent" />
+        </LinearLayout>
+        <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--            android:id="@+id/topLayer"-->
+        <!--            android:layout_gravity="bottom"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:visibility="invisible"-->
+        <!--            android:background="#FFFFFF">-->
+
+        <!--            <Button-->
+        <!--                android:id="@+id/okBtn"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="37dp"-->
+        <!--                android:background="#FFFFFF"-->
+        <!--                android:visibility="invisible"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:paddingTop="5dp"-->
+        <!--                android:paddingBottom="5dp"-->
+        <!--                android:paddingRight="10dp"-->
+        <!--                android:gravity="right|center_vertical"-->
+        <!--                android:text="OK"-->
+        <!--                android:textColor="#000000"-->
+        <!--                app:layout_constraintBottom_toTopOf="@id/wheelPicker"-->
+        <!--                app:layout_constraintRight_toRightOf="parent" />-->
+
+        <!--            <com.aigestudio.wheelpicker.WheelPicker-->
+        <!--                android:id="@+id/wheelPicker"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginBottom="16dp"-->
+        <!--                android:background="#17636060"-->
+        <!--                android:foregroundGravity="center"-->
+        <!--                android:visibility="invisible"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                tools:layout_editor_absoluteX="0dp" />-->
+        <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+    </FrameLayout>
+</layout>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        tools:context=".Activities.PaymentGateway">
+
+        <include
+            android:id="@+id/first"
+            layout="@layout/topic_layout"
+            app:title="@{@string/add_payment}" />
+        <!--<com.devmarvel.creditcardentry.library.CreditCardForm-->
+        <!--android:id="@+id/credit_card_form"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="40dp"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:padding="10dp"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/first"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintCircleRadius="@dimen/_18sdp"-->
+        <!--app:helper_text_color="@color/meetsid_color2"-->
+        <!--app:include_helper="true"-->
+        <!--app:card_number_hint="Card Number"-->
+        <!--app:animate_on_error="true"-->
+        <!--app:include_security="true"-->
+        <!--app:hint_text_color="@color/meetsid_color5"-->
+        <!--app:include_exp="true"-->
+        <!--app:include_zip="false"/>-->
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="$12.00"
+            android:textSize="@dimen/_18sdp"
+            app:layout_constraintTop_toBottomOf="@id/first"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/cardInput"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/amount"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:errorEnabled="true">
+
+            <EditText
+                android:id="@+id/cardNo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="19"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:hint="Card Number"
+                android:textColor="@color/meetsid_grey1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/cardInput">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/monthInput"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/amount"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:errorEnabled="true">
+
+                <EditText
+                    android:id="@+id/month"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:hint="MM"
+                    android:textColor="@color/meetsid_grey1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/yearInput"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/amount"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:errorEnabled="true">
+
+                <EditText
+                    android:id="@+id/year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:hint="YY"
+                    android:textColor="@color/meetsid_grey1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/cvvInput"
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/amount"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:errorEnabled="true">
+
+                <EditText
+                    android:id="@+id/cvv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:hint="CVV"
+                    android:textColor="@color/meetsid_grey1" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Pay $12.00"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+        <!--<LinearLayout-->
+        <!--android:id="@+id/second"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_marginTop="40dp"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/cardView"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent">-->
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:text="Card Number"-->
+        <!--android:textSize="@dimen/_16sdp"-->
+        <!--android:fontFamily="@font/gotham_light"-->
+        <!--android:textColor="@color/meetsid_color4"/>-->
+        <!--<EditText-->
+        <!--android:id="@+id/cardNo"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/_28sdp"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:background="#EFEFEFEF"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:gravity="center"-->
+        <!--android:hint="xxxx-xxxx-xxxx-xxxx"-->
+        <!--android:textColorHint="@color/meetsid_color5"-->
+        <!--android:textSize="@dimen/_14sdp"-->
+        <!--android:textColor="@color/meetsid_color2"-->
+        <!--android:inputType="text"-->
+        <!--android:digits="0123456789-"-->
+        <!--android:maxLength="19" />-->
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:text="Security Code"-->
+        <!--android:textSize="@dimen/_16sdp"-->
+        <!--android:fontFamily="@font/gotham_light"-->
+        <!--android:textColor="@color/meetsid_color4"/>-->
+        <!--<EditText-->
+        <!--android:id="@+id/code"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="@dimen/_28sdp"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:background="#EFEFEFEF"-->
+        <!--android:layout_gravity="left"-->
+        <!--android:gravity="center"-->
+        <!--android:hint="xxx"-->
+        <!--android:textColorHint="@color/meetsid_color5"-->
+        <!--android:textSize="@dimen/_14sdp"-->
+        <!--android:textColor="@color/meetsid_color2"-->
+        <!--android:inputType="text"-->
+        <!--android:digits="0123456789"-->
+        <!--android:maxLength="3" />-->
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:text="ExpirationDate"-->
+        <!--android:textSize="@dimen/_16sdp"-->
+        <!--android:fontFamily="@font/gotham_light"-->
+        <!--android:textColor="@color/meetsid_color4"/>-->
+        <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+        <!--<EditText-->
+        <!--android:id="@+id/expireMonth"-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="@dimen/_28sdp"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:background="#EFEFEFEF"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:gravity="center"-->
+        <!--android:hint="04"-->
+        <!--android:textColorHint="@color/meetsid_color5"-->
+        <!--android:textSize="@dimen/_14sdp"-->
+        <!--android:textColor="@color/meetsid_color2"-->
+        <!--android:inputType="text"-->
+        <!--android:digits="0123456789"-->
+        <!--android:maxLength="2" />-->
+        <!--<EditText-->
+        <!--android:id="@+id/expireYear"-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="@dimen/_28sdp"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:background="#EFEFEFEF"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:gravity="center"-->
+        <!--android:hint="2020"-->
+        <!--android:textColorHint="@color/meetsid_color5"-->
+        <!--android:textSize="@dimen/_14sdp"-->
+        <!--android:textColor="@color/meetsid_color2"-->
+        <!--android:inputType="text"-->
+        <!--android:digits="0123456789"-->
+        <!--android:maxLength="4" />-->
+        <!--</LinearLayout>-->
+        <!--<Button-->
+        <!--android:id="@+id/btnConfirm"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:background="@drawable/btn_green_fill_shape"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:text="Confirm"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:textSize="@dimen/_14sdp"-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:fontFamily="@font/gotham_light"/>-->
+        <!--</LinearLayout>-->
+        <!--<ImageView-->
+        <!--android:id="@+id/cardView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:src="@drawable/card_image"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"/>-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

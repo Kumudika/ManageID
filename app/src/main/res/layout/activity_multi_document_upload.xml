@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/meetsid_white">
+
+        <include
+            android:id="@+id/first"
+            layout="@layout/topic_layout"
+            app:title="@{@string/front_title}" />
+
+        <TextView
+            android:id="@+id/docInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/first"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="@string/nic_front_info"
+            style="@style/MainTextViewStyle" />
+
+        <ImageView
+            android:id="@+id/docView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:src="@drawable/nic_icon"
+            android:layout_centerHorizontal="true"
+            android:foreground="@drawable/image_boarder"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_below="@id/docInfo" />
+
+        <TextView
+            android:id="@+id/docText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nic_front_lbl"
+            android:layout_below="@id/docView"
+            android:gravity="center" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_20sdp">
+
+            <Button
+                android:id="@+id/btnCapture"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@drawable/btn_green_fill_shape"
+                android:text="@string/nic_front_btn"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <LinearLayout
+                android:id="@+id/btnPanel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <Button
+                    android:id="@+id/btnRetry"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_green_boarder_shape"
+                    android:text="@string/retry"
+                    android:textColor="@color/meetsid_green" />
+
+                <Button
+                    android:id="@+id/btnContinue"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/btn_green_fill_shape"
+                    android:text="@string/continue_btn" />
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</layout>

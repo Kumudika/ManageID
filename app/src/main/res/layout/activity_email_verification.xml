@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomLayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <include
+            android:id="@+id/first"
+            layout="@layout/topic_layout"
+            app:title="@{@string/verify_email}" />
+        <!--<FrameLayout-->
+        <!--android:id="@id/first"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/tab"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent">-->
+        <!--<ImageButton-->
+        <!--android:id="@+id/backBtn"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="left|center_vertical"-->
+        <!--android:src="@drawable/backbtn"-->
+        <!--android:background="@color/fui_transparent"/>-->
+        <!--<TextView-->
+        <!--android:id="@+id/topic"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Email verification"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:gravity="center"/>-->
+        <!--</FrameLayout>-->
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Please enter the code sent to your email"
+            android:textColor="@color/meetsid_grey2"
+            app:layout_constraintTop_toBottomOf="@id/first"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pinInput"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:gravity="center_horizontal"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text"
+            app:errorEnabled="true"
+            app:hintTextAppearance="@style/text_in_layout_hint_Style">
+
+            <EditText
+                android:id="@+id/pinCode"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:maxLength="5"
+                android:inputType="number"
+                android:includeFontPadding="true"
+                android:letterSpacing="1"
+                android:textSize="@dimen/_18sdp"
+                android:textColor="@color/meetsid_text_grey" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--        <com.rengwuxian.materialedittext.MaterialEditText-->
+        <!--            android:id="@+id/pinCode"-->
+        <!--            android:gravity="center_horizontal"-->
+        <!--            android:layout_width="210dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="@dimen/_24sdp"-->
+        <!--            android:maxLength="5"-->
+        <!--            android:inputType="number"-->
+        <!--            android:includeFontPadding="true"-->
+        <!--            android:letterSpacing="2"-->
+        <!--            android:textSize="@dimen/_14sdp"-->
+        <!--            android:textColor="@color/meetsid_grey2"-->
+        <!--            app:layout_constraintRight_toRightOf="parent"-->
+        <!--            app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--            app:met_autoValidate="true"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/text"-->
+        <!--            app:met_underlineColor="@color/meetsid_grey2"-->
+        <!--            app:met_primaryColor="@color/meetsid_grey2"-->
+        <!--            tools:targetApi="lollipop" />-->
+
+        <Button
+            android:id="@+id/btnVerify"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_green_fill_shape"
+            android:text="@string/verify_btn_text"
+            android:textAllCaps="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pinInput" />
+
+        <TextView
+            android:id="@+id/btnResend"
+            android:visibility="invisible"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resend_btn_text"
+            android:textColor="@color/meetsid_green"
+            android:drawableRight="@drawable/replay"
+            android:drawablePadding="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintTop_toBottomOf="@id/btnVerify"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

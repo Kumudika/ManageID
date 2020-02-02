@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="capture_button_size">45dp</dimen>
+    <dimen name="capture_overlay_size">60dp</dimen>
+
+    <!-- Text Size. -->
+
+    <!-- Common sizes. -->
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomLayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        tools:context=".Activities.PasscodeActivity">
+
+        <include
+            android:id="@+id/first"
+            layout="@layout/topic_layout"
+            app:title="@{@string/verify_passcode}" />
+
+        <TextView
+            android:id="@+id/actionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:text="@string/passcode"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/first"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <com.alimuzaffar.lib.pin.PinEntryEditText
+            android:id="@+id/txt_pin_entry"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:layout_marginTop="30dp"
+            android:cursorVisible="false"
+            android:digits="1234567890"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="#B3AAAA"
+            android:textColorHint="#B3AAAA"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/actionText"
+            app:pinAnimationType="fromBottom"
+            app:pinCharacterMask="\u25CF"
+            android:singleLine="true"
+            android:lineSpacingExtra="4dp"
+            app:pinCharacterSpacing="0dp"
+            app:pinTextBottomPadding="15dp"
+            app:pinLineStroke="2dp"
+            app:pinLineStrokeSelected="2dp"
+            app:pinBackgroundIsSquare="false"
+            app:pinLineColors="#B3AAAA"
+            android:layoutDirection="ltr" />
+        <!--<com.poovam.pinedittextfield.LinePinField-->
+        <!--android:id="@+id/pin"-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="40dp"-->
+        <!--android:inputType="number"-->
+        <!--android:textSize="12sp"-->
+        <!--android:textColor="@color/meetsid_grey1"-->
+        <!--app:highlightType="allFields"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/actionText"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--android:textSelectHandle="@drawable/text_handle"-->
+        <!--app:noOfFields="6"-->
+        <!--app:distanceInBetween="0dp"-->
+        <!--app:fieldColor="@color/colorPrimary"-->
+        <!--app:highlightColor="@color/colorAccent"-->
+        <!--app:lineThickness="1dp"-->
+        <!--app:isCursorEnabled="true"-->
+        <!--app:bottomTextPaddingDp="5dp"-->
+        <!--android:textColorHint="@color/meetsid_grey1"-->
+        <!--app:highlightSingleFieldMode="true"-->
+        <!--android:onChildViewAdded="aaaaaa"/>-->
+        <Button
+            android:id="@+id/nextBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_18sdp"
+            android:layout_marginRight="@dimen/_18sdp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/btn_green_fill_shape"
+            android:visibility="invisible"
+            android:text="@string/next"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+        <!--<com.meetsid.meetsidandroidapp.Utils.CodeInput2-->
+        <!--android:id="@+id/codeInput"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="@dimen/_24sdp"-->
+        <!--android:background="#FFFFFF"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:inputType="numberPassword"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/topic"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:underline_color="#818DA0"-->
+        <!--app:underline_selected_color="#FD457AD1"-->
+        <!--app:text_color="@color/meetsid_color2"-->
+        <!--app:codes="6"/>-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
